@@ -24,6 +24,11 @@
 
         <div class="intro">
             <h1 class="intro__title">Rock Paper and Scissors</h1>
+            <div class="intro__winner-score">
+                <span class="intro__winner-score-text">Winner Score :</span>
+                <input type="number" class="intro__winner-score-number" value="1" min="1">
+                <input class="intro__set-winner-score" type="button" value="Set">
+            </div>
             <button class="intro__start">Lets Play</button>
         </div>
 
@@ -39,9 +44,15 @@
                 <button class="match__scissors">scissors</button>
             </div>
         </div>
-
+        <div class="replay fadeOut">
+            <button type="button" class="replay__play-again">
+                <i class="fas fa-redo-alt"></i>
+            </button>
+        </div>
     </section>
 </body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://kit.fontawesome.com/ff69ec949d.js" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 
 </html>
